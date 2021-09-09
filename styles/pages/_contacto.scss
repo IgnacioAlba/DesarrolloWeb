@@ -1,0 +1,135 @@
+/*HEADER*/
+
+.background /*fondo gradiente del header*/ {
+  background: $color-fondo-titulo;
+}
+.logo {
+  /*logo de la empresa*/
+  height: $imagen;
+  width: $imagen;
+  margin: $margen;
+  border-radius: $curvado-suave;
+}
+li a {
+  color: $color-secundario;
+  text-decoration: none;
+  transition: background 2s;
+}
+
+li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
+  transition: all 1s;
+  background-color: $color-terciario;
+  color: $color-principal;
+}
+.active {
+  /*Cuando se activa una página*/
+  background-color: $color-secundario;
+  color: $color-fondo-general;
+}
+
+/*MAIN*/
+
+.contenedor_titulo {
+  /*Contenedor del titulo contacto*/
+  background: $color-fondo-titulo;
+  margin-top: $margen * 3;
+  margin-bottom: $margen * 3;
+  color: $color-fondo-general;
+}
+
+.titulo {
+  /*Titulo contacto*/
+  padding: $margen;
+  font-size: $titulo;
+  font-weight: bolder;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Form */
+
+.formulario /*Margen de todo el formulario*/ {
+  margin: $margen * 2;
+}
+
+.margen-arriba-y-abajo {
+  margin-top: $margen;
+  margin-bottom: $margen;
+}
+
+.legend {
+  font-size: $letra * 6;
+  font-weight: bold;
+  color: $color-principal;
+  margin: $margen * 2;
+}
+#input  /*caracteristicas de los casilleros*/ {
+  height: $margen * 2.5;
+  border: 1.5px solid $color-principal;
+  text-align: center;
+}
+
+#input:focus /*casilleros cuando seleccionas para escribir*/ {
+  background: $color-principal;
+  color: $color-fondo-general;
+}
+
+label {
+  font-size: $letra * 3.5;
+  color: $color-principal;
+}
+
+input[type="submit"],
+  input[type="reset"] /*boton de enviar y reset*/ {
+  background-color: $color-principal;
+  border: none;
+  color: $color-fondo-general;
+  padding: $margen $margen * 2;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+}
+
+/*FOOTER*/
+
+.flex-datos {
+  margin-top: $margen * 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  color: $color-fondo-general;
+  background: $color-fondo-titulo;
+}
+
+.flex-datos__urgencia {
+  text-align: center;
+  padding: $margen * 2;
+}
+.flex-datos__dirrecion {
+  text-align: center;
+  padding: $margen * 2;
+}
+
+h3 {
+  font-size: $letra * 5;
+  margin-bottom: $margen * 2;
+}
+
+/*Link Volver*/
+
+.volver {
+  margin: $margen * 4;
+  text-align: center;
+  font-size: $letra * 4;
+
+  a {
+    color: $color-principal;
+  }
+}

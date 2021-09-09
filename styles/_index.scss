@@ -1,0 +1,131 @@
+/*HEADER*/
+
+.background /*fondo gradiente del header*/ {
+  background: $color-fondo-titulo;
+}
+.logo {
+  /*logo de la empresa*/
+  height: $imagen;
+  width: $imagen;
+  margin: $margen;
+  border-radius: $curvado-suave;
+}
+li a {
+  color: $color-secundario;
+  text-decoration: none;
+  transition: background 2s;
+}
+
+li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
+  transition: all 1s;
+  background-color: $color-terciario;
+  color: $color-principal;
+}
+.active {
+  /*Cuando se activa una página*/
+  background-color: $color-secundario;
+  color: $color-fondo-general;
+}
+
+/*MAIN*/
+
+.contenedor_titulo {
+  /*Contenedor del titulo tratamientos*/
+  background: $color-fondo-titulo;
+  margin-top: $margen * 3;
+  margin-bottom: $margen * 3;
+  color: $color-fondo-general;
+}
+
+.titulo {
+  /*Titulo tratamientos*/
+  padding: $margen;
+  font-size: $titulo;
+  font-weight: bolder;
+  text-align: center;
+  justify-content: center;
+}
+
+/*Carrusel*/
+
+.imagen {
+  height: $imagen * 12; /*Medida para laptop*/
+}
+
+@media screen and (max-width: 426px) {
+  /*Medida para celular*/
+  .imagen {
+    height: $imagen * 5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*Medida para tablet*/
+  .imagen {
+    height: $imagen * 8;
+  }
+}
+
+/* Textos de historia*/
+
+.historia /*contenedor general de historias*/ {
+  padding-left: $margen * 2;
+  padding-right: $margen * 2;
+  padding-bottom: $margen * 3;
+}
+
+.titulo_historia /*Bordes generales de cada titulo*/ {
+  padding-bottom: $margen * 2;
+  padding-top: $margen * 2;
+  text-align: center;
+  color: $color-principal;
+  font-size: $letra * 6;
+  font-weight: bolder;
+}
+
+.texto_historia /*Texto justificado*/ {
+  text-align: justify;
+  font-weight: $negrita-suave;
+}
+
+.textos {
+  justify-content: center;
+  gap: 50px;
+}
+
+/* Footer */
+
+footer {
+  background-image: url(https://gaci.com.ar/wp-content/uploads/2020/04/FONDO-CELESTE.jpg);
+  background-position: top center;
+  padding: $margen * 3;
+}
+
+.info /* Contenedor del footer*/ {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: $margen * 3;
+}
+
+footer h3 /* Titulo del footer*/ {
+  text-align: center;
+  color: $color-principal;
+  font-size: $letra * 6;
+  font-weight: bold;
+}
+.info h4 /*Titulos del footer*/ {
+  font-size: $letra * 5;
+  font-weight: bold;
+  text-align: center;
+  color: $color-principal;
+  padding-top: $margen * 1.5;
+}
+
+.info p /*Textos del footer*/ {
+  font-size: $letra * 3;
+  font-weight: $negrita-fuerte;
+  text-align: center;
+  color: $color-principal;
+}

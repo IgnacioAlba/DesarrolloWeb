@@ -1,0 +1,80 @@
+/*HEADER*/
+
+.background /*fondo gradiente del header*/ {
+  background: $color-fondo-titulo;
+}
+.logo {
+  /*logo de la empresa*/
+  height: $imagen;
+  width: $imagen;
+  margin: $margen;
+  border-radius: $curvado-suave;
+}
+li a {
+  color: $color-secundario;
+  text-decoration: none;
+  transition: background 2s;
+}
+
+li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
+  transition: all 1s;
+  background-color: $color-terciario;
+  color: $color-principal;
+}
+.active {
+  /*Cuando se activa una página*/
+  background-color: $color-secundario;
+  color: $color-fondo-general;
+}
+
+/*MAIN*/
+
+.contenedor_titulo {
+  /*Contenedor del titulo tratamientos*/
+  background: $color-fondo-titulo;
+  margin-top: $margen * 3;
+  margin-bottom: $margen * 3;
+  color: $color-fondo-general;
+}
+
+.titulo {
+  /*Titulo tratamientos*/
+  padding: $margen;
+  font-size: $titulo;
+  font-weight: bolder;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Tabla de tratamientos*/
+
+table {
+  /*Tabla general*/
+  background-color: $color-principal;
+  border: 2px solid black;
+  height: $imagen * 8;
+}
+td {
+  /*Contenido de la tabla*/
+  text-align: center;
+  border: 1px black;
+}
+
+th {
+  /*Titulos de la tabla*/
+  font-size: $letra * 3.5;
+  text-align: center;
+}
+
+/*Link Volver*/
+
+.volver {
+  /*Boton para volver al inicio*/
+  margin: $margen * 4;
+  text-align: center;
+  font-size: $letra * 4;
+
+  a {
+    color: $color-principal;
+  }
+}
